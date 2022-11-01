@@ -7,11 +7,9 @@ jobs:
       - run: make start
   lint:
     needs: build
-    runs-on: ubuntu-latest
     steps:
       - run: make lint
   tests:
     needs: lint
-    runs-on: ubuntu-latest
     steps:
       - run: make test
