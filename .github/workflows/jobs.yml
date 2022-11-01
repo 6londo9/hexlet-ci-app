@@ -8,6 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: make setup
+      - run: start
   lint:
     runs-on: ubuntu-latest
     needs: build
